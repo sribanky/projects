@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spice Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/postlogin/spiceClub_favicon.png" />
+    <link rel="stylesheet" href="css/latofont.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqueryTouch.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboardSlick/slick.js"></script>
+    <script src="js/datepicker.js"></script>
+</head>
+<style>
+   
+</style>
+
+<body style="margin: 0;">
+    <nav class="navbar navbar-expand-lg navbar-default navbar-light loginPage">
+        <div class="wrapper">
+            <div class="navlogo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/postlogin/spicejetlogo@3x.png" alt="SpiceClub"></a>
+            </div>
+            <div class="navmenu navbar-collapse customNavMenuWrapper">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navrightSec hamburgerMenu" id="navbarSupportedContent">
+                <img src="images/postlogin/SpiceClubLogo.png" alt="SpiceClub">
+                <h2>Welcome to Spiceclub!</h2>
+                <div class="hamburgerButtonWrapper">
+                    <a href="javascript::void(0)" class="hamburgerLogin">Login</a>
+                    <a href="javascript::void(0)" class="hamburgerContact">Contact Us</a>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+                </ul>
+            </div>
+            <div class="navrightSec loginPage">
+                <ul class="loginnav navbar-nav mr-auto">
+                    <li class="nav-item faqdetails dropdown">
+                        <a href="#" class="nav-link"><img src="images/postlogin/help.svg" width="24" height="24" alt="help"></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="faq.html">FAQs Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item contactdetails dropdown">
+                        <a href="#" class="nav-link"><img src="images/postlogin/icon_Contact_24x24.svg" width="24" height="24" alt="contact"></a>
+                        <div class="dropdown-menu dropdown-menu-left">
+                            <h2>Contact Us</h2>
+                            <a class="dropdown-item" href="#">+91 987 180 3333</a>
+                            <a class="dropdown-item" href="#">+91 965 400 3333</a>
+                            <h2 class="dropdown-item">Email</h2>
+                            <a class="dropdown-item" href="#">support@spicejet.com</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-menu-left currentUser"><a class="nav-link" href="#">John Smith <span class="caret"></span></a>
+                        <div class="dropdown-menu currentUserActions">
+                            <a class="dropdown-item" href="Javascript:void(0)">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboardTabsWrapper">
+        <div class="tabMenuListWrapper">
+            <div class="dashboard NavbarWrapper">
+                <div class="subWrapper">
+                    <div class="spiceclubLogo"></div>
+                    <p class="myAccountCaption">My Account</p>
+                    <div class="userIcon">
+                        <var class="userInitials">CM</var>
+                    </div>
+                    <div class="userDetail">
+                        <p class="userGreeting"><var>Constanza</var>
+                            <br><var>Mariano</var></p>
+                        <p class="userCurrentTier"><var>Silver</var> Tier Member</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-pills mb-3" id="Main-tab" role="tablist">
+                <li><a id="main-profile-tab" href="myProfile.html">My Profile</a></li>
+                <li><a id="main-trip-tab" href="flights.html">My Trips</a></li>
+                <li><a id="main-spceclub-tab" href="spiceClub.html">SpiceClub</a></li>
+                <li><a class="active" id="main-spicecash-tab" href="spiceCashActivated.html">SpiceCash</a></li>
+                <li><a id="main-offers-tab" href="offers.html">Offers</a></li>
+            </ul>
+        </div>
+        <div id="spiceCash" class="activated">
+
+            <!--kyc complete-->
+            <div class="spicecashActivated">
+               <div class="suspendCardWrapper">
+                <h3 class="header">SpiceCash</h3>
+                <div class="spicecardWrapper">
+                    <div class="spiceCard"></div>   
+                    <div class="spiceCardText">
+                    <p class="subText">Your Card is currently Active. You may choose to suspend the card if required</p>
+                    <label class="suspendCardToggle">Suspend Card</label>    
+                    </div>
+                    <div class="kycWrapper">
+                        <p class="caption minimumKyc">Minimum KYC completed</p>
+                        <p class="caption completeKyc">Full KYC Pending</p>
+                        <a href="javascript:void(0)" class="redeemNow">Complete Now</a>
+                    </div>
+                </div>
+                </div> 
+            </div>
+            
+            <div class="spicecashActivated spiceBalance">
+               <div class="spiceCashBalance">
+                <div class="headerWrapper">
+                <h3 class="header">SpiceCash Balance</h3>
+                     <p class="available">30,000</p>
+                <select>
+                    <option selected>3 Month</option>    
+                    <option>2 Month</option>    
+                    <option>1 Month</option>    
+                </select>    
+                </div>
+                <div class="detailWrapper">
+                <div class="chartMainWrapper">
+                    <div class="chart-1-wrapper">
+                    <canvas id="myChart1" width="136" height="136" ></canvas>
+                    </div>    
+                    <div class="chart-2-wrapper">
+                        <canvas id="myChart2"  width="100" height="100" ></canvas>
+                    </div> 
+                    </div>
+                <div class="chartLegendWrapper">
+                    <p class="addedLegend legend">Spicecash<br><strong>Added</strong><var class="value">50,000</var></p>
+                    <p class="usedLegend legend">Spicecash<br><strong>Used</strong><var class="value">20,000</var></p>
+                  
+                </div>  
+                </div>  
+                     <a href="javascript:void(0)" class="viewDetails">View Details</a>  
+                </div>   
+               
+               <div class="topupSpiceCash">
+                 <div class="headerWrapper">
+                  <h3 class="header">Top Up SpiceCash</h3>    
+                 </div>
+                   <div class="detailWrapper">
+                <label>Enter Amount</label> 
+                <div class="inputContainer"><input type="tel" name="topup" class="form-control" value="200"></div>
+                <a href="javascript:void(0)" class="redeemNow">Top Up Now</a> 
+                <ul class="quickTopUp">
+                <li><a href="javascript:void(0)">500</a></li>       
+                <li><a href="javascript:void(0)">1000</a></li>     
+                <li><a href="javascript:void(0)">1500</a></li>
+                </ul> 
+                <label id="checkboxLabel" class="dispInline sameAdd">
+                <input type="checkbox" checked="">
+                <span class="checkmark"></span>I agree with the <a href="javascript:void(0)">Terms and Conditions</a>
+                    </label>
+                </div>
+                </div>
+                </div>
+            
+            <!--kyc complete-->
+<div class="partnerOffersWrapper dashBoard">
+        <h3 class="header">Partner Offers</h3>
+        <div class="subContentWrapper">
+            <section class="partnersOffers slider">
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%2018.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image02.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+            </section>
+            <a href="javascript:void(0)" class="allOffersLink">All Offers</a>
+        </div>
+    </div>
+     <div class="spicecashActivated summary">
+        <div class="summaryWrapper">
+        <div class="tabSection">
+            <h2 class="header">Summary</h2> 
+    <ul class="nav nav-pills flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="pill" href="#summaryUsed">SpiceCash used</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="pill" href="#summaryEarn">SC Points Earned</a>
+  </li>
+  
+</ul>        
+            </div>
+    <div class="tab-content">
+  <div class="tab-pane container active" id="summaryUsed">
+    <div class="content">
+      <div class="summaryChartWrapper">
+        <canvas id="summaryChart-1" width="249" height="216" ></canvas>
+    </div>
+    <div class="legendSection">
+    <h2 class="header">SpiceCash Used: ₹ <var>20,000</var></h2>
+        <div class="legendWrapper">
+            <p class="first"><var class="category">SpiceJet</var><var class="percent">40%</var><var class="total percent">8000</var></p>
+            <p class="second"><var class="category">Flipkart</var><var class="percent">30%</var><var class="total percent">6000</var></p>
+            <p class="third"><var class="category">Paytm</var><var class="percent">20%</var><var class="total percent">4000</var></p>
+            <p class="fourth"><var class="category">Others</var><var class="percent">10%</var><var class="total percent">2000</var></p>
+        
+        </div>
+        <select>
+                    <option selected>3 Month</option>    
+                    <option>2 Month</option>    
+                    <option>1 Month</option>    
+                </select>
+    </div>    
+    
+      
+    </div>    
+</div>
+  <div class="tab-pane container fade" id="summaryEarn">
+        <div class="content">
+      <div class="summaryChartWrapper">
+        <canvas id="summaryChart-2" width="249" height="216" ></canvas>
+    </div>
+             <div class="legendSection">
+    
+        <div class="legendWrapper">
+          <p class="earned">Earned SC Bonus<var>₹ 750</var></p>  
+          <p class="pending">Pending SC Bonus<var>₹ 450</var></p>  
+        </div>
+        <select>
+                    <option selected disabled>Period</option>
+                    <option>3 Month</option>    
+                    <option>2 Month</option>    
+                    <option>1 Month</option>    
+                </select>
+    </div> 
+      </div> 
+    </div>
+</div>        
+        
+        </div>      
+    </div>
+         <div id="yourTrsction" class="dashboardTabsWrapper" style="position: relative;">
+    <div class="requestAddPointsWrapper">
+        <h3 class="dispInline header">Your Transactions</h3>
+        <nav class="navbar navbar-inverse ScCashborderCls">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <ul class="nav margTop">
+                        <li class="active"><a class="active YTtabText" data-toggle="tab" href="#spiceClubAll">All</a></li>
+                        <li><a class="YTtabText margLeft" data-toggle="tab" href="#spiceClubAdded">Added</a></li>
+                         <li><a class="YTtabText margLeft" data-toggle="tab" href="#spiceClubUsed">Used</a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right dispInline margTop">
+                    <li class="dispInline"><span class="navText">Sort</span></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="ScCashTrsction" class="tab-content">
+    <div id="spiceClubAll" class="tab-pane fade in active show">
+        <div class="dispInline paddTopDt"><span class="YTtabText">04 April 2019</span></div>
+        <div class="dispInline float-right"><span class="navText dispInline margRt">Period</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker5"></span>
+            <span class="dateTo">to</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker6"></span>
+        </div>
+        <ul class="margTop">
+            <li  class="topPadd">
+                <div class="iconCls dispInline addPlusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Added</span><span class="pnrTextCls">Txn No: 345842</span><span class="ernPtCls">Added to Spicecash wallet</span></div>
+                    <div class="dispInline listFltRt"><span class="infoButn"></span><span class="countVal dispInline">₹1302</span><span class="dateSelectCls">*207 bonus SC points earned</span></div>
+                </div>
+            </li>
+            <div class="dispInline topPadd"><span class="YTtabText">20 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">Txn No: 674325</span><span class="ernPtCls">Used Spicecash at SpiceJet</span></div>
+                    <div class="dispInline listFltRt"><span class="negCountVal dispInline">₹250</span></div>
+                </div>
+            </li>
+            <div class="dispInline topPadd"><span class="YTtabText">30 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">Txn No: QPRS120</span><span class="ernPtCls">Used Spicecash at Amazon</span></div>
+                    <a class="dispInline margLftCls expandAccordianData moreArowCls" data-toggle="collapse"><span id="taglButnId">More<span id="ToglSpanId" class="moreArowCls"></span></span></a>
+                    <div class="dispInline listFltRt"><span class="expandNegCountVal dispInline">₹350</span><span class="dateSelectCls">*125 bonus SC points pending</span></div>
+                    <div class="expandedDiv collapse"><span class="expandedDivTxt">Estimated Bonus:</span><span class="expandedTxtBold">125</span><span class="expandedDivTxt expandMrgLeft">Status:</span><span class="expandedTxtBold">Pending</span><span class="butnMergCls float-right"><span class="expandedDivTxt expandMrgLeft">Expected Date:</span><span class="expandedDateTxt">18/04/19</span><span class="infoButn"></span></span>
+                    </div>
+                </div>
+            </li>
+            <div class="dispInline topPadd"><span class="YTtabText">22 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline addPlusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Added</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Added to Spicecash wallet</span></div>
+                    <div class="dispInline listFltRt"><span class="infoButn"></span><span class="countVal dispInline">₹750</span><span class="dateSelectCls">*207 bonus SC points earned</span></div>
+                </div>
+            </li>
+            <div class="dispInline topPadd"><span class="YTtabText">14 February 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Used Spicecash at Flipkart</span></div>
+                    <div class="dispInline listFltRt"><span class="expandNegCountVal dispInline">₹350</span><span class="dateSelectCls">*125 bonus SC points pending</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+            <div id="spiceClubAdded" class="tab-pane fade">
+                  <div class="dispInline paddTopDt"><span class="YTtabText">04 April 2019</span></div>
+        <div class="dispInline float-right"><span class="navText dispInline margRt">Period</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker8"></span>
+            <span class="dateTo">to</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker7"></span>
+        </div>
+        <ul class="margTop">
+            <li  class="topPadd">
+                <div class="iconCls dispInline addPlusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Added</span><span class="pnrTextCls">Txn No: 345842</span><span class="ernPtCls">Added to Spicecash wallet</span></div>
+                    <div class="dispInline listFltRt"><span class="infoButn"></span><span class="countVal dispInline">₹1302</span><span class="dateSelectCls">*207 bonus SC points earned</span></div>
+                </div>
+            </li>
+            
+           
+            
+            <div class="dispInline topPadd"><span class="YTtabText">22 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline addPlusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Added</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Added to Spicecash wallet</span></div>
+                    <div class="dispInline listFltRt"><span class="infoButn"></span><span class="countVal dispInline">₹750</span><span class="dateSelectCls">*207 bonus SC points earned</span></div>
+                </div>
+            </li>
+           
+            
+        </ul>
+            </div>
+            
+             <div id="spiceClubUsed" class="tab-pane fade">
+                 
+        <div class="dispInline float-right"><span class="navText dispInline margRt">Period</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker9"></span>
+            <span class="dateTo">to</span>
+            <span class="dispInline"><input type="text" class="form-control datePicker" id="datepicker10"></span>
+        </div>
+        <ul class="margTop">
+            
+            <div class="dispInline topPadd"><span class="YTtabText">20 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">Txn No: 674325</span><span class="ernPtCls">Used Spicecash at SpiceJet</span></div>
+                    <div class="dispInline listFltRt"><span class="negCountVal dispInline">₹250</span></div>
+                </div>
+            </li>
+            <div class="dispInline topPadd"><span class="YTtabText">30 March 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">Txn No: QPRS120</span><span class="ernPtCls">Used Spicecash at Amazon</span></div>
+                    <a class="dispInline margLftCls expandAccordianData moreArowCls" data-toggle="collapse"><span id="taglButnId">More<span id="ToglSpanId" class="moreArowCls"></span></span></a>
+                    <div class="dispInline listFltRt"><span class="expandNegCountVal dispInline">₹350</span><span class="dateSelectCls">*125 bonus SC points pending</span></div>
+                    <div class="expandedDiv collapse"><span class="expandedDivTxt">Estimated Bonus:</span><span class="expandedTxtBold">125</span><span class="expandedDivTxt expandMrgLeft">Status:</span><span class="expandedTxtBold">Pending</span><span class="butnMergCls float-right"><span class="expandedDivTxt expandMrgLeft">Expected Date:</span><span class="expandedDateTxt">18/04/19</span><span class="infoButn"></span></span>
+                    </div>
+                </div>
+            </li>
+           
+            
+            <div class="dispInline topPadd"><span class="YTtabText">14 February 2019</span></div>
+            <li class="topPadd">
+                <div class="iconCls dispInline lessMinusCls"></div>
+                <div class="dispInline subBorderCls">
+                    <div class="dispInline"><span class="flightBookCls">Used</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Used Spicecash at Flipkart</span></div>
+                    <div class="dispInline listFltRt"><span class="expandNegCountVal dispInline">₹350</span><span class="dateSelectCls">*125 bonus SC points pending</span></div>
+                </div>
+            </li>
+        </ul>
+            </div>
+            
+</div>
+</div>
+             <a class="loadMoreCls" href="">LOAD MORE</a>
+</div>   
+
+        </div>
+        
+    </div>
+    <script>
+    </script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/dynamic.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/spicecash.js"></script>
+    <script>
+    $('.expandAccordianData').click(function(){
+       
+        if($(this).closest('.subBorderCls').find('.expandedDiv').hasClass('show') == false)
+            {
+        $(this).closest('.subBorderCls').find('.expandedDiv').addClass('show');
+                $(this).html('Less');
+                $(this).addClass('lessArowCls');
+                $(this).removeClass('moreArowCls');
+            }
+        else{
+             $(this).closest('.subBorderCls').find('.expandedDiv').removeClass('show');
+                $(this).html('More');
+             $(this).addClass('moreArowCls');
+             $(this).removeClass('lessArowCls');
+        }
+      
+    });
+    </script>
+</body>
+
+</html>

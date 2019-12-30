@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spice Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/postlogin/spiceClub_favicon.png" />
+    <link rel="stylesheet" href="css/latofont.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqueryTouch.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboardSlick/slick.js"></script>
+    <script src="js/datepicker.js"></script>
+</head>
+<body style="margin: 0;padding-bottom:0">
+    <nav class="navbar navbar-expand-lg navbar-default navbar-light loginPage">
+        <div class="wrapper">
+            <div class="navlogo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/postlogin/spicejetlogo@3x.png" alt="SpiceClub"></a>
+            </div>
+            <div class="navmenu navbar-collapse customNavMenuWrapper">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navrightSec hamburgerMenu" id="navbarSupportedContent">
+                <img src="images/postlogin/SpiceClubLogo.png" alt="SpiceClub">
+                <h2>Welcome to Spiceclub!</h2>
+                <div class="hamburgerButtonWrapper">
+                    <a href="javascript::void(0)" class="hamburgerLogin">Login</a>
+                    <a href="javascript::void(0)" class="hamburgerContact">Contact Us</a>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+                </ul>
+            </div>
+            <div class="navrightSec loginPage">
+                <ul class="loginnav navbar-nav mr-auto">
+                    <li class="nav-item faqdetails dropdown">
+                        <a href="#" class="nav-link"><img src="images/postlogin/help.svg" width="24" height="24" alt="help"></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="faq.html">FAQs Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item contactdetails dropdown">
+                        <a href="#" class="nav-link"><img src="images/postlogin/icon_Contact_24x24.svg" width="24" height="24" alt="contact"></a>
+                        <div class="dropdown-menu dropdown-menu-left">
+                            <h2>Contact Us</h2>
+                            <a class="dropdown-item" href="#">+91 987 180 3333</a>
+                            <a class="dropdown-item" href="#">+91 965 400 3333</a>
+                            <h2 class="dropdown-item">Email</h2>
+                            <a class="dropdown-item" href="#">support@spicejet.com</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-menu-left currentUser"><a class="nav-link" href="#">John Smith <span class="caret"></span></a>
+                        <div class="dropdown-menu currentUserActions">
+                            <a class="dropdown-item" href="Javascript:void(0)">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboardTabsWrapper">
+        <div class="tabMenuListWrapper">
+            <div class="dashboard NavbarWrapper">
+                <div class="subWrapper">
+                    <div class="spiceclubLogo"></div>
+                    <p class="myAccountCaption">My Account</p>
+                    <div class="userIcon">
+                        <var class="userInitials">CM</var>
+                    </div>
+                    <div class="userDetail">
+                        <p class="userGreeting"><var>Constanza</var>
+                            <br><var>Mariano</var></p>
+                        <p class="userCurrentTier"><var>Silver</var> Tier Member</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-pills mb-3" id="Main-tab" role="tablist">
+                <li><a id="main-profile-tab" href="myProfile.html">My Profile</a></li>
+                <li><a id="main-trip-tab" href="flights.html">My Trips</a></li>
+                <li><a id="main-spceclub-tab" href="spiceClub.html">SpiceClub</a></li>
+                <li><a id="main-spicecash-tab" href="spiceCash.html">SpiceCash</a></li>
+                <li><a  class="active" id="main-offers-tab" href="offers.html">Offers</a></li>
+            </ul>
+        </div>
+        <div id="offers">
+            <div class="offersCarouselWrapper">
+                <div class="carousalImgWrapper">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                          </ol>
+ 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/postlogin/offers-1.png" style="height: 343px" alt="first slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/postlogin/offers-1.png" style="height: 343px" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/postlogin/offers-1.png" style="height: 343px" alt="third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousalDetailsWrapper">
+                    <span class="bigBasketImg"></span>
+                    <div class="cashbackWrapper">
+                        <p>Flat ₹500 cashback on purchases above ₹2500</p>
+                        <a class="redeemNow" href="javascript:void(0)">Get Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="offersClaimWrapper">
+                <h1>Offers</h1>
+                <div class="offersClaimContent">
+                    <nav class="offersClaimContentNav">
+                        <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="allofferstab" data-toggle="tab" href="#alloffers" role="tab" aria-controls="alloffers" aria-selected="true">All Offers</a>
+                            <a class="nav-item nav-link" id="flightstab" data-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="false">Flights</a>
+                            <a class="nav-item nav-link" id="addonstab" data-toggle="tab" href="#addons" role="tab" aria-controls="addons" aria-selected="false">Add Ons</a>
+                            <a class="nav-item nav-link" id="experiencestab" data-toggle="tab" href="#experiences" role="tab" aria-controls="experiences" aria-selected="false">Experiences</a>
+                            <a class="nav-item nav-link" id="hotelstab" data-toggle="tab" href="#hotels" role="tab" aria-controls="hotels" aria-selected="false">Hotels</a>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content offersClaimTabContent" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="alloffers" role="tabpanel" aria-labelledby="allofferstab">
+                            <div class="allOffersWrapper">
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim1.png"/>
+                                    </div>
+
+                                    <p>Get upto 20% off on your next Flight booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                               <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim2.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                               <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Hotel booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim1.png"/>
+                                    </div>
+
+                                    <p>Get upto 20% off on your next Flight booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                               <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim2.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Hotel booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim1.png"/>
+                                    </div>
+
+                                    <p>Get upto 20% off on your next flight booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                               <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim2.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                             
+                                
+                            </div>
+                            <a href="javascript:void(0)" class="showMoreOffers">Show More</a>
+                        </div>
+                        <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flightstab">
+                            <div class="allOffersWrapper">
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim1.png"/>
+                                    </div>
+
+                                    <p>Get upto 20% off on your next flight booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <a href="javascript:void(0)" class="showMoreOffers">Show More</a>
+                        </div>
+                        <div class="tab-pane fade" id="addons" role="tabpanel" aria-labelledby="addonstab">
+                            <div class="allOffersWrapper">
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Hotel booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <a href="javascript:void(0)" class="showMoreOffers">Show More</a>
+                        </div>
+                        <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiencestab">
+                            <div class="allOffersWrapper">
+                               <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim2.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <a href="javascript:void(0)" class="showMoreOffers">Show More</a>
+                        </div>
+                        <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotelstab">
+                            <div class="allOffersWrapper">
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="claimImgWrapper">
+                                        <img class="claimFlightImg" src="images/postlogin/claim3.png"/>
+                                    </div>
+
+                                    <p>Get upto 10% off on your next Experiences booking</p>
+                                    <div class="claimFooter">
+                                        <a class="redeemNow claimNow" href="javascript:void(0)">CLAIM</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <a href="javascript:void(0)" class="showMoreOffers">Show More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partnerOffersWrapper dashBoard">
+        <h3 class="header">Partner Offers</h3>
+        <div class="subContentWrapper">
+            <section class="partnersOffers slider">
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%2018.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image02.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+            </section>
+            <a href="javascript:void(0)" class="allOffersLink">All Offers</a>
+        </div>
+    </div>
+            <div class="earnpoints partnerSection spicecashPage" id="partners">
+					
+					<h2 class="header">Spicecash Offers</h2>
+                <h3 class="subHeader">Shop on our partner sites wih Spicecash  Card and earn loyalty points as well</h3>
+					<div class="earnPointsPageSrollPointList">
+						<ul>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper amazon">
+									<img src="images/earnpointsimages/amazon.png" alt="amazon">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper bigbasket">
+									<img src="images/earnpointsimages/bigbasket.png" alt="bigbasket">
+								</a>
+								<span class="partnerPoints">Earn 20x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper flipkart">
+									<img src="images/earnpointsimages/flipkart.png" alt="flipkart">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper ola">
+									<img src="images/earnpointsimages/ola.png" alt="ola">
+								</a>
+								<span class="partnerPoints">Earn 20x points</span>
+							</li>
+							
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper groffers">
+									<img src="images/earnpointsimages/groffers.png" alt="groffers">
+								</a>
+								<span class="partnerPoints">Earn 20x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper paytm">
+									<img src="images/earnpointsimages/paytm.png" alt="paytm">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper zomato">
+									<img src="images/earnpointsimages/zomato.png" alt="zomato">
+								</a>
+								<span class="partnerPoints">Earn 20x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper uber">
+									<img src="images/earnpointsimages/uber.png" alt="uber">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+                            <li>
+								<a href="javascript:void(0)" class="partnerIconWrapper snapdeal">
+									<img src="images/earnpointsimages/snapdeal.png" alt="snapdeal">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="partnerIconWrapper myntra">
+									<img src="images/earnpointsimages/myntra.png" alt="myntra">
+								</a>
+								<span class="partnerPoints">Earn 10x points</span>
+							</li>
+          
+						</ul>
+					</div>
+					<a href="javascript:void(0)" class="seeMorePartners">Show More</a>
+					<a href="javascript:void(0)" class="checkdetailPartners">Check Deals</a>
+				</div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/dynamic.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/offers.js"></script>
+  
+</body>
+
+</html>

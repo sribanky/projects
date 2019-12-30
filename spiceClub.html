@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spice Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/postlogin/spiceClub_favicon.png" />
+    <link rel="stylesheet" href="css/latofont.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick.css">
+    <link rel="stylesheet" href="css/dashboardSlick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqueryTouch.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboardSlick/slick.js"></script>
+    <script src="js/datepicker.js"></script>
+</head>
+
+<body style="margin: 0;">
+<nav class="navbar navbar-expand-lg navbar-default navbar-light loginPage">
+    <div class="wrapper">
+        <div class="navlogo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/postlogin/spicejetlogo@3x.png" alt="SpiceClub"></a>
+        </div>
+        <div class="navmenu navbar-collapse customNavMenuWrapper">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse navrightSec hamburgerMenu" id="navbarSupportedContent">
+            <img src="images/postlogin/SpiceClubLogo.png" alt="SpiceClub">
+            <h2>Welcome to Spiceclub!</h2>
+            <div class="hamburgerButtonWrapper">
+                <a href="javascript::void(0)" class="hamburgerLogin">Login</a>
+                <a href="javascript::void(0)" class="hamburgerContact">Contact Us</a>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">BOOK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ADD ONS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">GIFTCARD</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">SPICECLUB</a></li>
+            </ul>
+        </div>
+        <div class="navrightSec loginPage">
+            <ul class="loginnav navbar-nav mr-auto">
+                <li class="nav-item faqdetails dropdown">
+                    <a href="#" class="nav-link"><img src="images/postlogin/help.svg" width="24" height="24" alt="help"></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="faq.html">FAQs Page</a>
+                    </div>
+                </li>
+                <li class="nav-item contactdetails dropdown">
+                    <a href="#" class="nav-link"><img src="images/postlogin/icon_Contact_24x24.svg" width="24" height="24" alt="contact"></a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <h2>Contact Us</h2>
+                        <a class="dropdown-item" href="#">+91 987 180 3333</a>
+                        <a class="dropdown-item" href="#">+91 965 400 3333</a>
+                        <h2 class="dropdown-item">Email</h2>
+                        <a class="dropdown-item" href="#">support@spicejet.com</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown-menu-left currentUser"><a class="nav-link" href="#">John Smith <span class="caret"></span></a>
+                    <div class="dropdown-menu currentUserActions">
+                        <a class="dropdown-item" href="Javascript:void(0)">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="dashboardTabsWrapper">
+    <div class="tabMenuListWrapper">
+        <div class="dashboard NavbarWrapper">
+            <div class="subWrapper">
+                <div class="spiceclubLogo"></div>
+                <p class="myAccountCaption">My Account</p>
+                <div class="userIcon">
+                    <var class="userInitials">CM</var>
+                </div>
+                <div class="userDetail">
+                    <p class="userGreeting"><var>Constanza</var>
+                        <br><var>Mariano</var></p>
+                    <p class="userCurrentTier"><var>Silver</var> Tier Member</p>
+                </div>
+            </div>
+        </div>
+        <ul class="nav nav-pills mb-3" id="Main-tab" role="tablist">
+            <li><a id="main-profile-tab" href="myProfile.html">My Profile</a></li>
+            <li><a id="main-trip-tab" href="flights.html">My Trips</a></li>
+            <li><a class="active" id="main-spceclub-tab" href="spiceClub.html">SpiceClub</a></li>
+            <li><a id="main-spicecash-tab" href="spiceCash.html">SpiceCash</a></li>
+            <li><a id="main-offers-tab" href="offers.html">Offers</a></li>
+        </ul>
+    </div>
+    <div class="contentWrapper">
+        <div class="tab-content" id="main-tabContent">
+            <div class="tab-pane fade  show active" id="main-spiceclub" role="tabpanel" aria-labelledby="main-spceclub-tab">
+                <div class="spiceclubSubTabs">
+                    <ul class="nav nav-pills" id="sub-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="sub-loyalty-tab" data-toggle="pill" href="#sub-loyalty" role="tab" aria-controls="sub-loyalty" aria-selected="false">
+                                <p>Available
+                                    <br>SC Points</p>
+                                <p class="labelvalue loyaltyPoints">1250</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lastChild" id="sub-flights-tab" data-toggle="pill" href="#sub-flights" role="tab" aria-controls="sub-flights" aria-selected="false">
+                                <p>Total Flights Flown </p>
+                                <p class="labelvalue totalFlights">7</p>
+                                <p>Total Spent </p>
+                                <p class="labelvalue totalFlights totalSpent">₹40,000</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="currentTierTab">
+                            <a class="nav-link" id="sub-tier-tab" data-toggle="pill" href="#sub-tier" role="tab" aria-controls="sub-tier" aria-selected="true">
+                                <p>Current Tier: </p>
+                                <p class="labelvalue">SILVER</p>
+                                <p>Expiry Date: </p>
+                                <p class="labelvalue">01/08/19</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+
+                    <div class="tab-content" id="subtab-tabContent">
+                        <div class="tab-pane fade show active" id="sub-loyalty" role="tabpanel" aria-labelledby="sub-loyalty-tab">
+                            <div class="WrapperMain">
+                                <div class='pointsDetailsWrapper'>
+                                    <div class="tabWrapper">
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-earn-tab" data-toggle="pill" href="#pills-earn" role="tab" aria-controls="pills-earn" aria-selected="true">Earned</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-used-tab" data-toggle="pill" href="#pills-used" role="tab" aria-controls="pills-used" aria-selected="false">Used</a>
+                                            </li>
+                                        </ul>
+                                        <a href="javascript:void(0)" class="viewDetails">View Details</a>
+                                    </div>
+                                    <div class="tab-content" id="pills-Points">
+                                        <div class="tab-pane fade show active" id="pills-earn" role="tabpanel" aria-labelledby="pills-earn-tab">
+                                            <div style="display: flex;">
+                                                <div class="earnedPointsChartWrapper">
+                                                    <canvas id="myChart" width="135" height="135"></canvas>
+                                                    <p class="chartValue">Earned
+                                                        <br><var>3000</var></p>
+                                                </div>
+                                                <div class="pointsLegendsWrapper">
+                                                    <p class="flights-points"><span></span>Flights <var>1350</var></p>
+                                                    <p class="addon-points"><span></span>Add ons <var>300</var></p>
+                                                    <p class="spicecash-points"><span></span>SpiceCash Top-up <var>700</var></p>
+                                                    <p class="spiceclub-points"><span></span>Spiceclub Partners<var>500</var></p>
+                                                    <p class="other-points"><span></span>Other Partners<var>250</var></p>
+                                                </div>
+                                            </div>
+                                            <div class="earnMorePointsBanner">
+                                                <p class="caption">For tips to earn
+                                                    <br>more SC points</p>
+                                                <a href="javascript:void(0)">Click Here</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-used" role="tabpanel" aria-labelledby="pills-used-tab">
+                                            <div style="display: flex">
+                                                <div class="usedPointChartWrapper">
+                                                    <canvas id="myChart2" width="250" height="120"></canvas>
+                                            <div class="hideChartZero"></div>   
+                                        <p class="pointsUsed">Used SC points <var>1750</var></p>            
+                                        <p class="months">(in last 6 months)</p>            
+                                                </div>
+                                                
+                                <div class="usedChartLegendWrapper">
+                                     <p class="legendList month-1"><span></span>Jun <var>200</var></p>           
+                                     <p class="legendList month-2"><span></span>Jul <var>75</var></p>           
+                                     <p class="legendList month-3"><span></span>Aug <var>300</var></p>           
+                                     <p class="legendList month-4"><span></span>Sep <var>250</var></p>           
+                                     <p class="legendList month-5"><span></span>Oct <var>250</var></p>           
+                                     <p class="legendList month-6"><span></span>Nov <var>270</var></p>           
+                                </div>     
+                                
+                                          
+                                            </div>
+                                             <div class="usedPointBanner">
+                                            
+                                </div>     
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='pointsSummaryWrapper'>
+                                    <div class="pointsSummaryHeaderWrapper">
+                                        <h3 class="header">Points Summary</h3>
+                                    </div>
+                                    <div class="calcWrapper">
+                                        <div class="pointsEarned">
+                                            <p><span>+</span> Earned </p>
+                                            <var>3000</var>
+                                        </div>
+                                        <div class="pointsUsed">
+                                            <p><span>-</span> Used </p>
+                                            <var>1750</var>
+                                        </div>
+                                        <div class="totalPoints">
+                                            <p>Total Points
+                                                <br>Available</p>
+                                            <var>1250</var>
+                                        </div>
+                                    </div>
+                                    <div class="infoWrapper">
+                                        <a href="javascript:void(0)" class="redeemNow">Redeem Now</a>
+                                        <p>*100 points expiring this month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sub-flights" role="tabpanel" aria-labelledby="sub-flights-tab">
+                            <div class="mainWrapper">
+                                <div class="flightAnimationWrapper">
+                                    <div class="headerWrapper">
+                                        <p class="header">Your flight history in the Current Tier</p>
+                                    </div>
+                                    <div class="animationWindow">
+                                        <div style="position: relative;    height: 345px;top: 48px; left: 90px;z-index: 99">
+                                            <div style="width: 324px; height: 115px;background: url('images/curvedpathbg.svg');position: absolute;top: 0; left: 0;"></div>
+                                            <div class="planeAnimate"></div>
+                                            <div class="flightLoaderWrapper">
+                                                <div class="flightLoaderBg"></div>
+                                                <div class="flightLoaderFill">
+                                                    <div class="loaderFiller"></div>
+                                                </div>
+                                                <div class="FlightsCompleted">
+                                                    <p class="value">7</p>
+                                                    <p class="caption">Flights Completed</p>
+                                                </div>
+                                                <div class="FlightsCompleted spentTotal">
+                                                    <p class="value"><span>₹</span> 28,000</p>
+                                                    <p class="caption">spent in total</p>
+                                                </div>
+
+                                                <span class="currentTierTrack track silver"></span>
+                                                <span class="nextTierTrack track gold"></span>
+
+                                                <span class="currentTierTrack text silver">Silver</span>
+                                                <span class="nextTierTrack text gold">Gold</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="caption"><span></span>Complete 15 flights with at least ₹60,000 of booking amount for upgrade to next Tier</p>
+                                </div>
+                                <div class="upgradeTier">
+                                    <div class="headerWrapper">
+                                        <p class="header">Upgrade to Gold Tier</p>
+                                    </div>
+                                    <div class="animationWindow">
+                                        <p class="topTier gold">GOLD</p>
+                                        <p class="currentTier silver">SILVER</p>
+                                        <div class="verticalFlightLoaderBg"></div>
+                                        <div class="verticalFlightLoader">
+                                            <div class="verticalFlightLoaderFill"></div>
+                                        </div>
+                                        <p class="flightsRequired"><var>5</var><span>more</span>
+                                            <br>Flights required</p>
+                                        <p class="flightsBooked"><var>10</var>
+                                            <br>Flights booked</p>
+                                        <a href="javascript:void(0)" class="redeemNow">Book Now</a>
+                                        <span class="infoIcon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade active show" id="sub-tier" role="tabpanel" aria-labelledby="sub-tier-tab" style="visibility: hidden">
+                            <div>
+                                <div class="carouselWrapper">
+                                    <section class="center slider">
+                                        <div style="height: 294px;   margin-top: 40px; border-radius: 10px;position: relative" id="classicTierCard">
+                                            <p class="currentTierCheck"><span></span>Current Tier</p>
+                                            <div class="dashboardTierCardsHeader classic">
+                                                <p class="tierTitle">CLASSIC</p>
+                                                <p class="tierDesc">Register and become a SpiceClub member</p>
+                                            </div>
+                                            <div class="dashBoardTierCards classic">
+                                                <div class="classiclistitems">
+                                                    <ul>
+                                                        <li class="success">Exclusive deals</li>
+                                                        <li class="success">Earn points</li>
+                                                        <li class="closepoint">Priority Checkin</li>
+                                                        <li class="closepoint">Free cancellation</li>
+                                                        <li class="closepoint">Free tickets</li>
+                                                        <li class="closepoint">Free Meals</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 294px;  margin-top: 40px; border-radius: 10px; position: relative" id="silverTierCard">
+                                            <p class="currentTierCheck"><span></span>Current Tier</p>
+                                            <div class="dashboardTierCardsHeader silver">
+                                                <p class="tierTitle">SILVER</p>
+                                                <p class="tierDesc">Enter SILVER Tier with <strong>5</strong> flight bookings</p>
+                                            </div>
+                                            <div class="dashBoardTierCards silver">
+                                                <div class="classiclistitems">
+                                                    <ul>
+                                                        <li class="success">Exclusive deals</li>
+                                                        <li class="success">Earn points</li>
+                                                        <li class="success">Priority Checkin</li>
+                                                        <li class="closepoint">Free cancellation</li>
+                                                        <li class="closepoint">Free tickets</li>
+                                                        <li class="closepoint">Free Meals</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 294px; margin-top: 40px; border-radius: 10px;position: relative" id="goldTierCard">
+                                            <p class="currentTierCheck"><span></span>Current Tier</p>
+                                            <div class="dashboardTierCardsHeader gold">
+                                                <p class="tierTitle">GOLD</p>
+                                                <p class="tierDesc">Enter GOLD Tier with 15 flight bookings</p>
+                                            </div>
+                                            <div class="dashBoardTierCards gold">
+                                                <div class="classiclistitems">
+                                                    <ul>
+                                                        <li class="success">Exclusive deals</li>
+                                                        <li class="success">Earn points</li>
+                                                        <li class="success">Priority Checkin</li>
+                                                        <li class="success">Free cancellation</li>
+                                                        <li class="success">Free tickets</li>
+                                                        <li class="closepoint">Free Meals</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 294px; margin-top: 40px; border-radius: 10px;position: relative" id="platinumTierCard">
+                                            <p class="currentTierCheck"><span></span>Current Tier</p>
+                                            <div class="dashboardTierCardsHeader platinum">
+                                                <p class="tierTitle">PLATINUM</p>
+                                                <p class="tierDesc">Enter PLATINUM Tier with 30 flight bookings</p>
+                                            </div>
+                                            <div class="dashBoardTierCards platinum">
+                                                <div class="classiclistitems">
+                                                    <ul>
+                                                        <li class="success">Exclusive deals</li>
+                                                        <li class="success">Earn points</li>
+                                                        <li class="success">Priority Checkin</li>
+                                                        <li class="success">Free cancellation</li>
+                                                        <li class="success">Free tickets</li>
+                                                        <li class="success">Free Meals</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dashboardTabsWrapper" style="position: relative;">
+    <div class="requestAddPointsWrapper">
+        <h3 class="header">Claim Points</h3>
+        <div class="formWrapper">
+            <div class="first-col"></div>
+            <div class="second-col">
+                <p>Request Points / Add Unclaimed Points</p>
+            </div>
+            <div class="third-col">
+                <form method="post" class="pnrform">
+                    <label>PNR No. <span>
+                      
+              <span class="infoHover">You can request points for flights flown on SpiceJet in last 180 days. In case you forgot to log-in while booking on SpiceJet.com or booked through an agent or flew before joining SpiceClub, you can claim your missing points here.</span>
+                        </span></label>
+                    <input type="text" class="pnrInput" name="pnr" placeholder="Enter PNR No. ">
+                    <button class="redeemNow" type="submit">Claim Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="yourVouchers" class="dashboardTabsWrapper" style="position: relative;">
+    <div class="requestAddPointsWrapper">
+        <h3 class="dispInline header">Your  Vouchers&nbsp;&nbsp;<span class="voucherSubTitle">(5 in Total)</span></h3>
+        <ul class="dispInline nav float-right">
+            <li class="active dispInline"><a class="active" data-toggle="tab" href="#all">ALL</a></li>
+            <li class="dispInline"><a data-toggle="tab" href="#menuactive">ACTIVE</a></li>
+            <li class="dispInline"><a data-toggle="tab" href="#menuused">USED</a></li>
+            <li class="dispInline"><a data-toggle="tab" href="#menuexpired">EXPIRED</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="all" class="tab-pane fade in active show">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 nopadding">
+                        <div class="gridBox">
+                            <div class="leftGridfltVoucher">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls">₹750</span></li>
+                                    <li class="paddTop"><span class="textVal">Worth flight voucher </span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gridBox">
+                            <div class="leftGridMealVoucher">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls meals">₹300</span></li>
+                                    <li class="paddTop"><span class="textVal">Worth meal voucher</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gridBox">
+                            <div class="leftGridFreeUpgrade">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls spicemax">1 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free Spicemax upgrade</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gridBox">
+                                <div class="leftGridFreeUpgrade">
+                                </div>
+                                <div class="rightGrid">
+                                    <ul class="paddTop">
+                                        <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                        <li class="paddTop"><span class="currencyCls spicemax">1 x</span></li>
+                                        <li class="paddTop"><span class="textVal">Free Spicemax upgrade</span></li>
+                                        <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gridBox">
+                                <div class="leftGridFreeCancel">
+                                </div>
+                                <div class="rightGrid">
+                                    <ul class="paddTop">
+                                        <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                        <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                        <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                        <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gridBox">
+                                    <div class="leftGridFreeCancel">
+                                    </div>
+                                    <div class="rightGrid">
+                                        <ul class="paddTop">
+                                            <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                            <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                            <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                            <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gridBox">
+                                        <div class="leftGridFreeCancel">
+                                        </div>
+                                        <div class="rightGrid">
+                                            <ul class="paddTop">
+                                                <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                                <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                                <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                                <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="gridBox">
+                                            <div class="leftGridFreeCancel">
+                                            </div>
+                                            <div class="rightGrid">
+                                                <ul class="paddTop">
+                                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                            <div class="gridBox">
+                                <span class="gridBoxUnlockText">Unlock more vouchers by Upgrading to next Tier</span>
+                                <div class="leftGridMealVoucher">
+                                </div>
+                                <div class="rightGrid">
+                                    <ul class="paddTop">
+                                        <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                        <li class="paddTop"><span class="currencyCls meals">₹300</span></li>
+                                        <li class="paddTop"><span class="textVal">Worth meal voucher</span></li>
+                                        <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                      
+                    </div>
+                
+                </div>
+                 <a href="javascript:void(0)" class="loadMoreLink">Load More</a>
+            </div>
+
+            <div id="menuactive" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 nopadding">
+                        <div class="gridBox">
+                            <div class="leftGridFreeUpgrade">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls spicemax">1 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free Spicemax upgrade</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <a href="javascript:void(0)" class="loadMoreLink">Load More</a>
+            </div>
+
+            <div id="menuused" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 nopadding">
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gridBox">
+                            <div class="leftGridFreeCancel">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls cancel">2 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free change or cancellation</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <a href="javascript:void(0)" class="loadMoreLink">Load More</a>
+            </div>
+
+            <div id="menuexpired" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 nopadding">
+                        <div class="gridBox">
+                            <div class="leftGridFreeUpgrade">
+                            </div>
+                            <div class="rightGrid">
+                                <ul class="paddTop">
+                                    <li><span class="valUp">Valid upto</span>&nbsp;&nbsp; <span class="valYear">31/11/19</span></li>
+                                    <li class="paddTop"><span class="currencyCls spicemax">1 x</span></li>
+                                    <li class="paddTop"><span class="textVal">Free Spicemax upgrade</span></li>
+                                    <li class="paddTop"><a class="buttonCls" href="javascript:void(0)">View Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <a href="javascript:void(0)" class="loadMoreLink">Load More</a>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<div class="dashboardTabsWrapper" style="position: relative;">
+    <div class="partnerOffersWrapper dashBoard">
+        <h3 class="header">Partner Offers</h3>
+        <div class="subContentWrapper">
+            <section class="partnersOffers slider">
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%2018.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image02.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Cashback upto 20% every month</p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 20% additional off on headphones</p>
+                    <div class="tag">EXCLUSIVE</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+                <div class="cards">
+                    <div class="branding"><img src="images/postlogin/amazon-logo-16x9jpg%20copy%209.png" alt="branding"></div>
+                    <p class="validity">Valid till: <strong>31/11/19</strong></p>
+                    <div class="banner"><img src="images/postlogin/image03.png" alt="banner"></div>
+                    <p class="desc">Upto 25% extra off on shoes and bags </p>
+                    <div class="tag">POPULAR</div>
+                    <a href="javascript:void(0)" class="getDealLink">Get Deal</a>
+                </div>
+            </section>
+            <a href="javascript:void(0)" class="allOffersLink">All Offers</a>
+        </div>
+    </div>
+</div>
+
+<div id="yourTrsction" class="dashboardTabsWrapper" style="position: relative;">
+    <div class="requestAddPointsWrapper">
+        <h3 class="dispInline header">Your Transactions</h3>
+        <nav class="navbar navbar-inverse borderCls">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <ul class="nav margTop">
+                        <li class="active"><a class="active YTtabText" data-toggle="tab" href="#spiceClub">SC Points</a></li>
+                        <li><a class="YTtabText margLeft" data-toggle="tab" href="#vouchers">Vouchers </a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right dispInline margTop">
+                    <li class="dispInline"><span class="navText">Sort</span></li>
+                    <li class="dispInline"><span class="navText">Filter</span></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="tab-content">
+            <div id="spiceClub" class="tab-pane fade in active show">
+                <div class="dispInline paddTopDt"><span class="YTtabText">21 April 2019</span></div>
+                <div class="dispInline float-right"><span class="navText dispInline margRt">Period</span>
+                    <span class="dispInline"><input type='text' class="form-control datePicker" id='datepicker1' /></span>
+                    <span class="dateTo">to</span>
+                    <span class="dispInline"><input type='text' class="form-control datePicker" id='datepicker2' /></span>
+                </div>
+                <ul class="margTop">
+                    <li>
+                        <div class="iconCls dispInline flight"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookCls">Flight Booking</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Earned points for booking flights on 12/04/19</span></div>
+                            <div class="dispInline listFltRt"><span class="countVal dispInline">+1302</span><span class="dateSelectCls">Valid till 12/04/2020</span></div>
+                        </div>
+                    </li>
+                    <li class="topPadd">
+                        <div class="iconCls dispInline meal"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookCls">Add on Booking</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Earned points for add ons purchased on 12/04/19</span></div>
+                            <div class="dispInline listFltRt"><span class="countVal dispInline">+250</span><span class="dateSelectCls">Valid till 12/04/2020</span></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dispInline topPadd"><span class="YTtabText">20 March 2019</span></div>
+                <ul class="margTop">
+                    <li>
+                        <div class="iconCls dispInline debit flight"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookCls">Flight Booking</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Used points for booking flights on 17/03/19</span></div>
+                            <div class="dispInline listFltRt"><span class="negCountVal dispInline">-350</span><span class="dateSelectCls"></span></div>
+                        </div>
+                    </li>
+                    <li class="topPadd">
+                        <div class="iconCls dispInline wallet"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookCls">SpiceCash Top up</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Earned points for topping up SpiceCash on 22/03/19</span></div>
+                            <div class="dispInline listFltRt"><span class="countVal dispInline">+750</span><span class="dateSelectCls">Valid till 22/03/2020</span></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dispInline topPadd"><span class="YTtabText">14 February 2019 </span></div>
+                <ul class="margTop">
+                    <li>
+                        <div class="iconCls dispInline debit bag"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookCls">Add on Booking</span><span class="pnrTextCls">PNR: QPRS123</span><span class="ernPtCls">Used points for add ons purchased on 23/02/19</span></div>
+                            <div class="dispInline listFltRt"><span class="negCountVal dispInline">-350</span><span class="dateSelectCls"></span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="vouchers" class="tab-pane fade">
+            <div class="dispInline paddTopDt"><span class="YTtabText">Received on 21 April 2019</span></div>
+                <div class="dispInline float-right"><span class="navText dispInline margRt">Period</span>
+                    <span class="dispInline"><input type='text' class="form-control datePicker" id='datepicker3' /></span>
+                    <span class="dateTo">to</span>
+                    <span class="dispInline"><input type='text' class="form-control datePicker" id='datepicker4' /></span>
+                </div>
+                <ul class="margTop">
+                    <li>
+                        <div class="iconCls dispInline flight"></div>
+                        <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookVouhCls">Free Flight Voucher</span><span class="infoButn">
+                            <span class="hoverInfo">Free Flight Voucher for booking flights on 12 May 2019</span>    
+                                </span><span class="ernPtCls">Voucher worth up to ₹3000</span></div>
+                            <div class="divFlotRt">
+                             <div class="dispInline voucherslistFltleft"><span class="vcodeVal dispInline">SPICE3K</span> <span class="dispInline"><a class="copyCls" href="#">Copy to Use</a></span></div>
+                            <div class="dispInline voucherslistFltRt"><span class="vcountVal dispInline">Valid till</span><span class="vdateSelectCls">12 April 2020</span></div></div>
+                        </div>
+                    </li>
+                    <li class="topPadd">
+                        <div class="iconCls dispInline meal birthday"></div>
+                            <div class="dispInline subBorderCls">
+                            <div class="dispInline"><span class="flightBookVouhCls">Birthday Voucher</span><span class="infoButn"><span class="hoverInfo">Free Flight Voucher for booking flights on 12 May 2019</span> </span><span class="ernPtCls">Voucher worth up to ₹5000 Cashback</span></div>
+                            <div class="divFlotRt">
+                             <div class="dispInline voucherslistFltleft UsedVoucher"><span class="vcodeVal dispInline">HBD5000</span> <span class="dispInline"><a class="copyCls" href="#">PNR: QPRS123</a></span></div>
+                            <div class="dispInline voucherslistFltRt usedExpired"><span class="vcountVal dispInline">Used on</span><span class="vdateSelectCls">12 Sept 2019</span></div></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dispInline topPadd"><span class="YTtabText">Received on 14 February 2019</span></div>
+                <ul class="vmargTop">
+                    <li>
+                        <div class="iconCls dispInline debit flight cancel"></div>
+                            <div class="dispInline endsubBorderCls">
+                            <div class="dispInline"><span class="flightBookVouhCls">Zerocan</span><span class="infoButn"><span class="hoverInfo">Free Flight Voucher for booking flights on 12 May 2019</span> </span><span class="ernPtCls">Voucher worth up to ₹1000</span></div>
+                            <div class="divFlotRt">
+                             <div class="dispInline voucherslistFltleft expiredVoucher"><span class="vcodeVal dispInline">HBD5000</span> <span class="dispInline"><a class="copyCls" href="#">Expired</a></span></div>
+                            <div class="dispInline voucherslistFltRt usedExpired"><span class="vcountVal dispInline">Expired on</span><span class="vdateSelectCls">8 June 2019</span></div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>   
+<script src="js/Chart.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dynamic.js"></script>
+<script>
+    $('.requestAddPointsWrapper .formWrapper .third-col .pnrform label > span').hover(function(){
+      $('.requestAddPointsWrapper .formWrapper .third-col .pnrform label span .infoHover').css('display', 'block'); 
+    }, function(){
+        $('.requestAddPointsWrapper .formWrapper .third-col .pnrform label span .infoHover').css('display', 'none'); 
+    })
+    
+    $('#sub-loyalty .pointsDetailsWrapper .tabWrapper .viewDetails').click(function(){
+        $('html, body').animate({
+        scrollTop: $("#yourTrsction").offset().top
+    }, 2000); 
+    });
+
+    
+    var couponLength = $('.requestAddPointsWrapper .tab-pane.active').find('.gridBox');
+    console.log(couponLength.length);
+    if(couponLength.length  > 6){  
+        $('.requestAddPointsWrapper .tab-pane.active .loadMoreLink').css('display', 'block');
+    }
+                                                                         
+    $('.requestAddPointsWrapper .nav li a').click(function(){
+        
+        let link = $(this).attr('href');
+        
+          let couponLength = $('.requestAddPointsWrapper .tab-content ' + link).find('.gridBox');
+             
+            if(couponLength.length > 6){
+                $('.requestAddPointsWrapper .tab-content ' + link + ' .loadMoreLink').css('display', 'block');
+            }
+        else{
+             $('.requestAddPointsWrapper .tab-content ' + link + ' .loadMoreLink').css('display', 'none');
+        }   
+        });  
+    
+    $('.requestAddPointsWrapper  .loadMoreLink').click(function(){
+        if($(this).closest('.tab-pane').find('.row').hasClass('addHeight') == false)
+            {
+        $(this).closest('.tab-pane').find('.row').addClass('addHeight');
+                $(this).html('Show Less');
+            }
+                else{
+                      $(this).closest('.tab-pane').find('.row').removeClass('addHeight');
+                $(this).html('Load More');
+                }
+       
+    });
+
+        
+var ctx = document.getElementById('myChart2').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+        datasets: [{
+             legend: false,
+            label: 'sdsd',
+            data: [200, 75, 300, 250, 250, 270],
+            backgroundColor: [
+                '#FCC63E',
+                '#C40029',
+                '#F73C4A',
+                 '#ADADAD',
+                '#CBE4A6',
+                '#EDB6FC'
+            ],
+            borderColor: [
+               '#FCC63E',
+                '#C40029',
+                '#F73C4A',
+                 '#ADADAD',
+                '#CBE4A6',
+                '#EDB6FC'
+            ],
+            borderWidth: 0,
+             barThickness: 1,
+            
+        }]
+    },
+    options: {
+         legend: {
+            display: false
+         },
+         tooltips: {
+            enabled: false
+         },
+        scales: {
+            yAxes: [{
+                ticks: {
+                   
+                    fontColor: 'rgba(74,74,74,0.5)',
+                    beginAtZero: false,
+                    stepSize: 100,
+                    fontSize: 10,
+                     fontFamily: 'Lato',
+                    padding: 15,
+                    
+                },
+                  gridLines: {
+                       zeroLineColor: "#ffffff",
+                      drawBorder: false,
+                    lineWidth: 1,
+                    color: "rgba(151,151,151,0.05)"
+                }
+            }],
+             xAxes: [{
+                 
+                // Change here
+            	barThickness: 9,
+                 scaleShowGridLines: false,
+                 gridLines: { 
+                     display: false, 
+                       
+                            },
+                 ticks: {
+                    
+                     fontColor: 'rgba(74,74,74,0.5)',
+                    beginAtZero: false,
+                     fontSize: 10,
+                     fontFamily: 'Lato'
+                    
+                }
+            }]
+        }
+    }
+});
+    
+    
+</script>
+</body>
+</html>
